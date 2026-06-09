@@ -3,263 +3,204 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chimas Construction | Concrete, Patios & Retaining Walls</title>
+
+<title>Chimas Construction | Concrete & Hardscaping Charlotte NC</title>
+
+<meta name="description" content="Chimas Construction specializes in concrete driveways, patios, retaining walls, and hardscaping in Charlotte NC. Free estimates available.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-    line-height:1.6;
-    color:#333;
+color:#222;
+background:#fff;
+}
+
+/* HEADER */
+header{
+background:#111;
+color:#fff;
+padding:15px 0;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-header{
-    background:#111;
-    color:#fff;
-    padding:20px 0;
-    position:sticky;
-    top:0;
-    z-index:1000;
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .logo{
-    font-size:28px;
-    font-weight:700;
+font-size:22px;
+font-weight:700;
 }
 
-.logo span{
-    color:#d4af37;
+.logo span{color:#d4af37;}
+
+nav a{
+color:#fff;
+margin-left:20px;
+text-decoration:none;
+font-size:14px;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-}
+nav a:hover{color:#d4af37;}
 
-nav ul li{
-    margin-left:25px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
-
-nav ul li a:hover{
-    color:#d4af37;
-}
-
+/* HERO */
 .hero{
-    background:
-    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url('images/hero.jpg');
-    background-size:cover;
-    background-position:center;
-    height:90vh;
-    display:flex;
-    align-items:center;
-    color:white;
-}
-
-.hero-content{
-    max-width:700px;
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+url('images/hero.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+color:#fff;
+padding:20px;
 }
 
 .hero h1{
-    font-size:60px;
-    margin-bottom:20px;
+font-size:50px;
+max-width:700px;
 }
 
 .hero p{
-    font-size:20px;
-    margin-bottom:30px;
+margin:15px 0;
+font-size:18px;
+max-width:600px;
 }
 
 .btn{
-    display:inline-block;
-    background:#d4af37;
-    color:#111;
-    padding:15px 30px;
-    text-decoration:none;
-    font-weight:600;
-    border-radius:5px;
+background:#d4af37;
+color:#111;
+padding:12px 22px;
+font-weight:600;
+text-decoration:none;
+display:inline-block;
+border-radius:5px;
 }
 
-.btn:hover{
-    background:#fff;
-}
-
+/* SECTIONS */
 section{
-    padding:80px 0;
+padding:70px 0;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
+.title{
+text-align:center;
+margin-bottom:40px;
 }
 
-.section-title h2{
-    font-size:40px;
-    color:#111;
+.title h2{
+font-size:36px;
 }
 
-.about{
-    background:#f8f8f8;
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
 }
 
-.about-content{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
+/* CARDS */
+.card{
+background:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+border-radius:10px;
+overflow:hidden;
 }
 
-.about img{
-    width:100%;
-    border-radius:10px;
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
 }
 
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+.card-content{
+padding:15px;
 }
 
-.service-card{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-    transition:.3s;
-}
-
-.service-card:hover{
-    transform:translateY(-5px);
-}
-
-.service-card h3{
-    margin-bottom:15px;
-    color:#d4af37;
-}
-
-.gallery{
-    background:#f8f8f8;
-}
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
-
-.gallery-grid img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.why-us{
-    background:#111;
-    color:white;
-}
-
-.features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-.feature{
-    text-align:center;
-    padding:20px;
-}
-
-.feature h3{
-    color:#d4af37;
-    margin-bottom:10px;
-}
-
-.contact{
-    background:#f8f8f8;
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-}
-
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
-
-.contact-form button{
-    background:#d4af37;
-    border:none;
-    padding:15px 30px;
-    cursor:pointer;
-    font-weight:600;
-}
-
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
+/* CTA */
+.cta{
+background:#111;
+color:#fff;
+text-align:center;
+padding:60px 20px;
 }
 
 .phone{
-    font-size:24px;
-    color:#d4af37;
-    font-weight:bold;
+font-size:24px;
+color:#d4af37;
+font-weight:700;
+margin:10px 0;
+}
+
+/* FORM */
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input, textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#d4af37;
+border:none;
+padding:12px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* FLOAT BUTTON */
+.call-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:20px;
 }
 
 @media(max-width:768px){
-
-.hero h1{
-    font-size:42px;
-}
-
-.about-content,
-.contact-grid{
-    grid-template-columns:1fr;
-}
-
-nav{
-    flex-direction:column;
-}
-
-nav ul{
-    margin-top:15px;
-}
-
+.hero h1{font-size:34px;}
+nav{flex-direction:column;}
+nav a{margin:10px 0;}
 }
 
 </style>
@@ -271,263 +212,128 @@ nav ul{
 <div class="container">
 <nav>
 <div class="logo">CHIMAS <span>CONSTRUCTION</span></div>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<div>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 <div class="container">
-<div class="hero-content">
-<h1>Quality Craftsmanship Built To Last</h1>
-
-<p>
-Concrete • Patios • Driveways • Retaining Walls • Outdoor Living Spaces
-</p>
-
+<h1>Concrete. Patios. Retaining Walls.</h1>
+<p>Professional construction services in Charlotte, NC built to last.</p>
 <a href="#contact" class="btn">Get Free Estimate</a>
 </div>
-</div>
 </section>
 
-<section id="about" class="about">
-<div class="container">
-
-<div class="section-title">
-<h2>About Us</h2>
-</div>
-
-<div class="about-content">
-
-<div>
-<h3>Building Trust One Project At A Time</h3>
-
-<p>
-At Chimas Construction, we take pride in delivering
-high-quality construction services throughout Charlotte
-and surrounding communities.
-</p>
-
-<br>
-
-<p>
-From driveways and patios to retaining walls and outdoor
-living spaces, our team provides exceptional workmanship,
-honest communication, and dependable service.
-</p>
-
-<br>
-
-<p class="phone">(980) 293-5467</p>
-</div>
-
-<div>
-<img src="images/driveway.jpg" alt="Construction">
-</div>
-
-</div>
-
-</div>
-</section>
-
+<!-- SERVICES -->
 <section id="services">
 <div class="container">
-
-<div class="section-title">
+<div class="title">
 <h2>Our Services</h2>
 </div>
 
-<div class="services-grid">
+<div class="grid">
 
-<div class="service-card">
-<h3>Concrete Installation</h3>
-<p>
-Driveways, sidewalks, slabs, extensions,
-repairs and foundations.
-</p>
+<div class="card">
+<img src="images/driveway.jpg" alt="Driveway">
+<div class="card-content">
+<h3>Driveways</h3>
+<p>Durable concrete driveways built for strength and longevity.</p>
+</div>
 </div>
 
-<div class="service-card">
-<h3>Stamped Concrete</h3>
-<p>
-Decorative concrete finishes that add
-beauty and value to your property.
-</p>
-</div>
-
-<div class="service-card">
+<div class="card">
+<img src="images/patio.jpg" alt="Patio">
+<div class="card-content">
 <h3>Patios</h3>
-<p>
-Custom patio installations for outdoor
-entertaining and relaxation.
-</p>
+<p>Beautiful outdoor patios for relaxing and entertaining.</p>
+</div>
 </div>
 
-<div class="service-card">
+<div class="card">
+<img src="images/retaining-wall.jpg" alt="Retaining Wall">
+<div class="card-content">
 <h3>Retaining Walls</h3>
-<p>
-Strong and attractive retaining wall
-solutions with proper drainage.
-</p>
+<p>Strong and reliable retaining wall systems.</p>
+</div>
 </div>
 
-<div class="service-card">
-<h3>Pavers & Walkways</h3>
-<p>
-Beautiful paver patios, paths,
-walkways and entryways.
-</p>
+<div class="card">
+<img src="images/gallery5.jpg" alt="Walkway">
+<div class="card-content">
+<h3>Walkways</h3>
+<p>Clean and safe concrete walkways and paths.</p>
 </div>
-
-<div class="service-card">
-<h3>Demolition & Site Prep</h3>
-<p>
-Safe demolition and professional
-site preparation services.
-</p>
 </div>
 
 </div>
-
 </div>
 </section>
 
-<section id="gallery" class="gallery">
-
+<!-- GALLERY -->
+<section id="gallery" style="background:#f7f7f7;">
 <div class="container">
-
-<div class="section-title">
-<h2>Project Gallery</h2>
+<div class="title">
+<h2>Recent Projects</h2>
 </div>
 
-<div class="gallery-grid">
+<div class="grid">
 
-<img src="images/gallery1.jpg" alt="Project 1">
-<img src="images/gallery2.jpg" alt="Project 2">
-<img src="images/gallery3.jpg" alt="Project 3">
-<img src="images/gallery4.jpg" alt="Project 4">
-<img src="images/gallery5.jpg" alt="Project 5">
-<img src="images/gallery6.jpg" alt="Project 6">
-<img src="images/gallery7.jpg" alt="Project 7">
-
-</div>
+<img class="card" src="images/gallery1.jpg" alt="Project 1">
+<img class="card" src="images/gallery2.jpg" alt="Project 2">
+<img class="card" src="images/gallery3.jpg" alt="Project 3">
+<img class="card" src="images/gallery4.jpg" alt="Project 4">
+<img class="card" src="images/gallery5.jpg" alt="Project 5">
+<img class="card" src="images/gallery6.jpg" alt="Project 6">
+<img class="card" src="images/gallery7.jpg" alt="Project 7">
 
 </div>
-
+</div>
 </section>
 
-<section class="why-us">
-
+<!-- CTA -->
+<section class="cta" id="contact">
 <div class="container">
-
-<div class="section-title">
-<h2 style="color:white;">Why Choose Us?</h2>
+<h2>Get Your Free Estimate</h2>
+<p class="phone">(980) 293-5467</p>
+<p>Fast response • Free quotes • Quality workmanship</p>
 </div>
-
-<div class="features">
-
-<div class="feature">
-<h3>Experienced Team</h3>
-<p>Skilled professionals dedicated to quality workmanship.</p>
-</div>
-
-<div class="feature">
-<h3>Competitive Pricing</h3>
-<p>Affordable solutions without sacrificing quality.</p>
-</div>
-
-<div class="feature">
-<h3>Reliable Service</h3>
-<p>Projects completed on time and with attention to detail.</p>
-</div>
-
-<div class="feature">
-<h3>Customer Satisfaction</h3>
-<p>Your satisfaction is our top priority.</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-<section id="contact" class="contact">
-
+<!-- CONTACT FORM (GitHub SAFE VERSION) -->
+<section>
 <div class="container">
-
-<div class="section-title">
-<h2>Request A Free Estimate</h2>
+<div class="title">
+<h2>Request a Quote</h2>
 </div>
 
-<div class="contact-grid">
+<!-- OPTION 1: Mail fallback (WORKS WITHOUT ANY SETUP) -->
+<form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
 
-<div>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<textarea name="message" rows="5" placeholder="Describe your project"></textarea>
 
-<h3>Contact Information</h3>
-
-<br>
-
-<p><strong>Phone:</strong> (980) 293-5467</p>
-<p><strong>Alternate:</strong> (980) 398-7943</p>
-<p><strong>Service Area:</strong> Charlotte, NC & Surrounding Areas</p>
-
-<br>
-
-<p>
-Ready to start your next project?
-Contact us today for a free consultation.
-</p>
-
-</div>
-
-<div>
-
-<form class="contact-form">
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Email Address" required>
-
-<input type="tel" placeholder="Phone Number" required>
-
-<textarea rows="5" placeholder="Tell Us About Your Project"></textarea>
-
-<button type="submit">
-Request Free Estimate
-</button>
+<button type="submit">Send Request</button>
 
 </form>
 
 </div>
-
-</div>
-
-</div>
-
 </section>
 
 <footer>
-
-<h3>CHIMAS CONSTRUCTION</h3>
-
-<p>
-Quality Construction. Honest Service. Lasting Results.
-</p>
-
-<br>
-
-<p>
-© 2026 Chimas Construction. All Rights Reserved.
-</p>
-
+<p>© 2026 Chimas Construction | Charlotte, NC</p>
 </footer>
+
+<!-- CALL BUTTON -->
+<a class="call-btn" href="tel:9802935467">
+📞 Call Now
+</a>
 
 </body>
 </html>
