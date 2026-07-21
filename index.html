@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,6 +12,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
+/* =========================
+   GENERAL
+========================= */
 
 *{
 margin:0;
@@ -25,7 +30,21 @@ color:#222;
 background:#fff;
 }
 
-/* HEADER */
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+section{
+padding:70px 0;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
 header{
 background:#111;
 color:#fff;
@@ -33,12 +52,6 @@ padding:15px 0;
 position:sticky;
 top:0;
 z-index:999;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
 }
 
 nav{
@@ -52,7 +65,9 @@ font-size:22px;
 font-weight:700;
 }
 
-.logo span{color:#d4af37;}
+.logo span{
+color:#d4af37;
+}
 
 nav a{
 color:#fff;
@@ -61,18 +76,27 @@ text-decoration:none;
 font-size:14px;
 }
 
-nav a:hover{color:#d4af37;}
+nav a:hover{
+color:#d4af37;
+}
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
+
 .hero{
 height:90vh;
 background:
 linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
 url('images/Hero.jpg');
+
 background-size:cover;
 background-position:center;
+
 display:flex;
 align-items:center;
+
 color:#fff;
 padding:20px;
 }
@@ -103,10 +127,10 @@ cursor:pointer;
 background:#fff;
 }
 
-/* SECTIONS */
-section{
-padding:70px 0;
-}
+
+/* =========================
+   SECTION TITLES
+========================= */
 
 .title{
 text-align:center;
@@ -117,14 +141,17 @@ margin-bottom:40px;
 font-size:36px;
 }
 
-/* GRID */
+
+/* =========================
+   SERVICES
+========================= */
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:20px;
 }
 
-/* CARDS */
 .card{
 background:#fff;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
@@ -136,9 +163,17 @@ overflow:hidden;
 width:100%;
 height:200px;
 object-fit:cover;
+display:block;
 }
-  
-/* BEFORE AND AFTER GALLERY */
+
+.card-content{
+padding:15px;
+}
+
+
+/* =========================
+   BEFORE & AFTER GALLERY
+========================= */
 
 .gallery-section{
 background:#f7f7f7;
@@ -157,7 +192,7 @@ gap:25px;
 }
 
 .before-after-image{
-background:white;
+background:#fff;
 border-radius:12px;
 overflow:hidden;
 box-shadow:0 5px 15px rgba(0,0,0,0.12);
@@ -167,7 +202,7 @@ box-shadow:0 5px 15px rgba(0,0,0,0.12);
 text-align:center;
 padding:12px;
 background:#111;
-color:white;
+color:#fff;
 font-size:18px;
 }
 
@@ -178,7 +213,11 @@ object-fit:cover;
 display:block;
 }
 
-/* CTA */
+
+/* =========================
+   CTA
+========================= */
+
 .cta{
 background:#111;
 color:#fff;
@@ -193,7 +232,11 @@ font-weight:700;
 margin:10px 0;
 }
 
-/* FORM */
+
+/* =========================
+   CONTACT FORM
+========================= */
+
 form{
 max-width:600px;
 margin:auto;
@@ -202,7 +245,8 @@ flex-direction:column;
 gap:10px;
 }
 
-input, textarea{
+input,
+textarea{
 padding:12px;
 border:1px solid #ccc;
 border-radius:5px;
@@ -223,18 +267,28 @@ button:hover{
 background:#fff;
 }
 
-/* FLOAT BUTTON */
+
+/* =========================
+   FLOATING CALL BUTTON
+========================= */
+
 .call-btn{
 position:fixed;
 bottom:20px;
 right:20px;
+
 background:#25d366;
 color:#fff;
+
 padding:14px 18px;
+
 border-radius:50px;
 text-decoration:none;
+
 font-weight:600;
+
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
 transition:0.3s;
 }
 
@@ -243,13 +297,22 @@ background:#20ba5e;
 transform:scale(1.05);
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
+
 footer{
 background:#111;
 color:#aaa;
 text-align:center;
 padding:20px;
 }
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:768px){
 
@@ -269,8 +332,6 @@ margin:10px 0;
 grid-template-columns:1fr;
 }
 
-/* MOBILE BEFORE & AFTER */
-
 .project-pair{
 grid-template-columns:1fr;
 }
@@ -282,135 +343,297 @@ height:280px;
 }
 
 </style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
+
 <div class="container">
+
 <nav>
-<div class="logo">CHIMAS <span>CONSTRUCTION</span></div>
+
+<div class="logo">
+CHIMAS <span>CONSTRUCTION</span>
+</div>
+
 <div>
+
 <a href="#services">Services</a>
+
 <a href="#gallery">Gallery</a>
+
 <a href="#contact">Contact</a>
+
 </div>
+
 </nav>
+
 </div>
+
 </header>
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
+
 <div class="container">
-<h1>Concrete. Patios. Retaining Walls.</h1>
-<p>Professional construction services in Charlotte, NC built to last.</p>
-<a href="#contact" class="btn">Get Free Estimate</a>
+
+<h1>
+Concrete. Patios. Retaining Walls.
+</h1>
+
+<p>
+Professional construction services in Charlotte, NC built to last.
+</p>
+
+<a href="#contact" class="btn">
+Get Free Estimate
+</a>
+
 </div>
+
 </section>
 
-<!-- SERVICES -->
+
+<!-- =========================
+     SERVICES
+========================= -->
+
 <section id="services">
+
 <div class="container">
+
 <div class="title">
-<h2>Our Services</h2>
+
+<h2>
+Our Services
+</h2>
+
 </div>
+
 
 <div class="grid">
 
+
 <div class="card">
+
 <img src="images/Driveway.jpg" alt="Driveway">
+
 <div class="card-content">
-<h3>Driveways</h3>
-<p>Durable concrete driveways built for strength and longevity.</p>
-</div>
+
+<h3>
+Driveways
+</h3>
+
+<p>
+Durable concrete driveways built for strength and longevity.
+</p>
+
 </div>
 
+</div>
+
+
 <div class="card">
+
 <img src="images/Patio.jpg" alt="Patio">
+
 <div class="card-content">
-<h3>Patios</h3>
-<p>Beautiful outdoor patios for relaxing and entertaining.</p>
-</div>
+
+<h3>
+Patios
+</h3>
+
+<p>
+Beautiful outdoor patios for relaxing and entertaining.
+</p>
+
 </div>
 
-<div class="card">
-<img src="images/Retaining-Wall.jpeg" alt="Retaining-Wall">
-<div class="card-content">
-<h3>Retaining Walls</h3>
-<p>Strong and reliable retaining wall systems.</p>
-</div>
 </div>
 
+
 <div class="card">
+
+<img src="images/Retaining-Wall.jpeg" alt="Retaining Wall">
+
+<div class="card-content">
+
+<h3>
+Retaining Walls
+</h3>
+
+<p>
+Strong and reliable retaining wall systems.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
 <img src="images/Walkway.jpg" alt="Walkway">
+
 <div class="card-content">
-<h3>Walkways</h3>
-<p>Clean and safe concrete walkways and paths.</p>
-</div>
+
+<h3>
+Walkways
+</h3>
+
+<p>
+Clean and safe concrete walkways and paths.
+</p>
+
 </div>
 
 </div>
+
+
 </div>
+
+</div>
+
 </section>
 
-<!-- GALLERY -->
+
+<!-- =========================
+     BEFORE & AFTER GALLERY
+========================= -->
+
 <section id="gallery" class="gallery-section">
 
 <div class="container">
 
 <div class="title">
-<h2>Before & After Projects</h2>
-<p>See the transformation created by Chimas Construction.</p>
+
+<h2>
+Before & After Projects
+</h2>
+
+<p>
+See the transformation created by Chimas Construction.
+</p>
+
 </div>
+
 
 <div class="before-after">
 
+
 <!-- PROJECT 1 -->
+
 <div class="project-pair">
 
 <div class="before-after-image">
-<h3>Before</h3>
-<img src="images/Gallery1.jpg" alt="Before project 1">
+
+<h3>
+Before
+</h3>
+
+<img
+src="images/Gallery1.jpg"
+alt="Before project 1"
+>
+
 </div>
 
+
 <div class="before-after-image">
-<h3>After</h3>
-<img src="images/Gallery2.jpg" alt="After project 1">
+
+<h3>
+After
+</h3>
+
+<img
+src="images/Gallery2.jpg"
+alt="After project 1"
+>
+
 </div>
 
 </div>
 
 
 <!-- PROJECT 2 -->
+
 <div class="project-pair">
 
 <div class="before-after-image">
-<h3>Before</h3>
-<img src="images/Gallery3.jpg" alt="Before project 2">
+
+<h3>
+Before
+</h3>
+
+<img
+src="images/Gallery3.jpg"
+alt="Before project 2"
+>
+
 </div>
 
+
 <div class="before-after-image">
-<h3>After</h3>
-<img src="images/Gallery4.jpg" alt="After project 2">
+
+<h3>
+After
+</h3>
+
+<img
+src="images/Gallery4.jpg"
+alt="After project 2"
+>
+
 </div>
 
 </div>
 
 
 <!-- PROJECT 3 -->
+
 <div class="project-pair">
 
 <div class="before-after-image">
-<h3>Before</h3>
-<img src="images/Gallery5.jpg" alt="Before project 3">
+
+<h3>
+Before
+</h3>
+
+<img
+src="images/Gallery5.jpg"
+alt="Before project 3"
+>
+
 </div>
+
 
 <div class="before-after-image">
-<h3>After</h3>
-<img src="images/Gallery6.jpg" alt="After project 3">
+
+<h3>
+After
+</h3>
+
+<img
+src="images/Gallery6.jpg"
+alt="After project 3"
+>
+
 </div>
 
 </div>
+
 
 </div>
 
@@ -418,43 +641,111 @@ height:280px;
 
 </section>
 
-<!-- CTA -->
+
+<!-- =========================
+     CTA
+========================= -->
+
 <section class="cta" id="contact">
+
 <div class="container">
-<h2>Get Your Free Estimate</h2>
-<p class="phone">(980) 293-5467</p>
-<p>Fast response • Free quotes • Quality workmanship</p>
+
+<h2>
+Get Your Free Estimate
+</h2>
+
+<p class="phone">
+(980) 293-5467
+</p>
+
+<p>
+Fast response • Free quotes • Quality workmanship
+</p>
+
 </div>
+
 </section>
 
-<!-- CONTACT FORM -->
+
+<!-- =========================
+     CONTACT FORM
+========================= -->
+
 <section>
+
 <div class="container">
+
 <div class="title">
-<h2>Request a Quote</h2>
+
+<h2>
+Request a Quote
+</h2>
+
 </div>
 
-<form action="mailto:frecendiz@gmail.com" method="POST" enctype="text/plain">
 
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="tel" name="phone" placeholder="Phone Number" required>
-<textarea name="message" rows="5" placeholder="Describe your project"></textarea>
+<form
+action="mailto:frecendiz@gmail.com"
+method="POST"
+enctype="text/plain"
+>
 
-<button type="submit">Send Request</button>
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required
+>
+
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number"
+required
+>
+
+<textarea
+name="message"
+rows="5"
+placeholder="Describe your project"
+></textarea>
+
+<button type="submit">
+Send Request
+</button>
 
 </form>
 
 </div>
+
 </section>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
-<p>© 2026 Chimas Construction | Charlotte, NC</p>
+
+<p>
+© 2026 Chimas Construction | Charlotte, NC
+</p>
+
 </footer>
 
-<!-- CALL BUTTON -->
-<a class="call-btn" href="tel:9802935467">
+
+<!-- =========================
+     CALL BUTTON
+========================= -->
+
+<a
+class="call-btn"
+href="tel:9802935467"
+>
 📞 Call Now
 </a>
 
+
 </body>
+
 </html>
