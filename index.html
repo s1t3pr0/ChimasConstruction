@@ -138,72 +138,46 @@ height:200px;
 object-fit:cover;
 }
 
-<!-- GALLERY -->
-<section id="gallery" class="gallery-section">
+  
+/* BEFORE AND AFTER GALLERY */
 
-<div class="container">
+.gallery-section{
+background:#f7f7f7;
+}
 
-<div class="title">
-<h2>Before & After Projects</h2>
-<p>See the transformation created by Chimas Construction.</p>
-</div>
+.before-after{
+display:flex;
+flex-direction:column;
+gap:40px;
+}
 
+.project-pair{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
 
-<div class="before-after">
+.before-after-image{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.12);
+}
 
+.before-after-image h3{
+text-align:center;
+padding:12px;
+background:#111;
+color:white;
+font-size:18px;
+}
 
-<div class="project-pair">
-
-<div class="before-after-image">
-<h3>Before</h3>
-<img src="images/Gallery1.jpg" alt="Before project">
-</div>
-
-<div class="before-after-image">
-<h3>After</h3>
-<img src="images/Gallery2.jpg" alt="After project">
-</div>
-
-</div>
-
-
-
-<div class="project-pair">
-
-<div class="before-after-image">
-<h3>Before</h3>
-<img src="images/Gallery3.jpg" alt="Before project">
-</div>
-
-<div class="before-after-image">
-<h3>After</h3>
-<img src="images/Gallery4.jpg" alt="After project">
-</div>
-
-</div>
-
-
-
-<div class="project-pair">
-
-<div class="before-after-image">
-<h3>Before</h3>
-<img src="images/Gallery5.jpg" alt="Before project">
-</div>
-
-<div class="before-after-image">
-<h3>After</h3>
-<img src="images/Gallery6.jpg" alt="After project">
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
+.before-after-image img{
+width:100%;
+height:350px;
+object-fit:cover;
+display:block;
+}
 
 /* CTA */
 .cta{
@@ -287,10 +261,33 @@ padding:20px;
 }
 
 @media(max-width:768px){
-.hero h1{font-size:34px;}
-nav{flex-direction:column;}
-nav a{margin:10px 0;}
-.grid{grid-template-columns:1fr;}
+
+.hero h1{
+font-size:34px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav a{
+margin:10px 0;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+/* MOBILE BEFORE & AFTER */
+
+.project-pair{
+grid-template-columns:1fr;
+}
+
+.before-after-image img{
+height:280px;
+}
+
 }
 
 </style>
@@ -365,50 +362,72 @@ nav a{margin:10px 0;}
 </div>
 </section>
 
-/* BEFORE AND AFTER GALLERY */
+<!-- GALLERY -->
+<section id="gallery" class="gallery-section">
 
-.gallery-section{
-background:#f7f7f7;
-}
+<div class="container">
 
+<div class="title">
+<h2>Before & After Projects</h2>
+<p>See the transformation created by Chimas Construction.</p>
+</div>
 
-.before-after{
-display:flex;
-flex-direction:column;
-gap:40px;
-}
+<div class="before-after">
 
+<!-- PROJECT 1 -->
+<div class="project-pair">
 
-.project-pair{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
-}
+<div class="before-after-image">
+<h3>Before</h3>
+<img src="images/Gallery1.jpg" alt="Before project 1">
+</div>
 
+<div class="before-after-image">
+<h3>After</h3>
+<img src="images/Gallery2.jpg" alt="After project 1">
+</div>
 
-.before-after-image{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.12);
-}
-
-
-.before-after-image h3{
-text-align:center;
-padding:12px;
-background:#111;
-color:white;
-font-size:18px;
-}
+</div>
 
 
-.before-after-image img{
-width:100%;
-height:350px;
-object-fit:cover;
-display:block;
-}
+<!-- PROJECT 2 -->
+<div class="project-pair">
+
+<div class="before-after-image">
+<h3>Before</h3>
+<img src="images/Gallery3.jpg" alt="Before project 2">
+</div>
+
+<div class="before-after-image">
+<h3>After</h3>
+<img src="images/Gallery4.jpg" alt="After project 2">
+</div>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+<div class="project-pair">
+
+<div class="before-after-image">
+<h3>Before</h3>
+<img src="images/Gallery5.jpg" alt="Before project 3">
+</div>
+
+<div class="before-after-image">
+<h3>After</h3>
+<img src="images/Gallery6.jpg" alt="After project 3">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
 
 <!-- CTA -->
 <section class="cta" id="contact">
